@@ -8,7 +8,7 @@ HEIGHT = 720
 game = new Phaser.Game WIDTH, HEIGHT, Phaser.AUTO, '', do
   preload: !->
     game.load
-      ..crossOrigin = \anonymous
+      ..crossOrigin = true
       ..~image
         .. \clear \images/clear.png
         .. \start \images/start.png

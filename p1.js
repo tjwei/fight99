@@ -10,7 +10,7 @@ game = new Phaser.Game(WIDTH, HEIGHT, Phaser.AUTO, '', {
   preload: function(){
     var x$, y$, z$;
     x$ = game.load;
-    x$.crossOrigin = 'anonymous';
+    x$.crossOrigin = true;
     y$ = bind$(x$, 'image');
     y$('clear', 'images/clear.png');
     y$('start', 'images/start.png');
