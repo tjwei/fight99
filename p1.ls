@@ -17,6 +17,7 @@ game = new Phaser.Game WIDTH, HEIGHT, Phaser.AUTO, '', do
         .. \ball \images/icon1.png 16 16
   create: !->
     game
+      ..load.crossOrigin = \anonymous
       ..scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL
       ..physics.start-system Phaser.Physics.ARCADE
       ..add
