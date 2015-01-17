@@ -10,6 +10,7 @@ game = new Phaser.Game(WIDTH, HEIGHT, Phaser.AUTO, '', {
   preload: function(){
     var x$, y$, z$;
     x$ = game.load;
+    x$.crossOrigin = 'anonymous';
     y$ = bind$(x$, 'image');
     y$('clear', 'images/clear.png');
     y$('start', 'images/start.png');
@@ -21,7 +22,6 @@ game = new Phaser.Game(WIDTH, HEIGHT, Phaser.AUTO, '', {
   create: function(){
     var x$, y$, z$, z1$, z2$, emitterSetting, z3$, z4$, z5$, z6$, z7$;
     x$ = game;
-    x$.load.crossOrigin = 'anonymous';
     x$.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
     x$.physics.startSystem(Phaser.Physics.ARCADE);
     y$ = x$.add;
